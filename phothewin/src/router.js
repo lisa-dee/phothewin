@@ -16,10 +16,10 @@ export const router = VueRouter.createRouter({
       { path: '/', 
       component: PhoPage, 
       children:[
-        { path: '/Home', component: HomePage },
-        { path: '/AddReview', component: AddReview },
-        { path: '/SeeReview', component: SeeReview },
-        { path: '/AboutUs', component: AboutUs }
+        { path: '/Home', component: HomePage, name: 'Home' },
+        { path: '/AddReview', component: AddReview, name: 'Add Review' },
+        { path: '/SeeReview', component: SeeReview, name: 'See Review' },
+        { path: '/AboutUs', component: AboutUs, name: 'About' }
       ]},
     ]
   });
